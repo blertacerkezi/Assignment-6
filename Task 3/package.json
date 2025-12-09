@@ -1,0 +1,15 @@
+{
+  "name": "solid-movies",
+  "version": "1.0.0",
+  "description": "An application to read movies from Solid",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@comunica/query-sparql": "^4.4.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
