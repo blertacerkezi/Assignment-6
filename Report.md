@@ -17,12 +17,12 @@ Ans:
 The group consists of the following members and WebIDs:
 
 Blerta Cerkezi
-WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/bc/profile/card#me
-Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/bc/profile/card
+WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/bb/profile/card#me
+Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/bb/profile/card
 
 Lena Högger
-WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/lenahoegger/profile/card#me
-Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/lenahoegger/profile/card
+WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/lh/profile/card#me
+Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/lh/profile/card
 
 
 2. Indicate the URL of group profile and the file that contains the group profile.
@@ -47,7 +47,14 @@ The document is publicly readable via its Access Control List.
 
 2. Query the names of all the people in your distributed social graph (i.e., people you know directly or indirectly) using your profile as an entry point. To do this, you will need to write a navigational query (see lecture slides) and use link traversal (using the command comunica-sparql-link-traversal). Try running the query without link traversal as well and see what happens. Provide the query in the [`query_friends.rq`](query_friends.rq) file (see project README) and explain the results.
 
-Ans:
+Ans: To retrieve the distributed social graph, a navigational SPARQL query using the property path (foaf:knows)+ was 
+executed starting from the user’s WebID profile. With comunica-sparql-link-traversal, Comunica follows foaf:knows 
+links across multiple Solid Pods and retrieves the names of people that are directly or indirectly connected to the user.
+
+When running the same query without link traversal, only the local WebID profile is queried. As a result, fewer or no 
+names are returned, since Comunica does not follow links to external resources.
+
+This shows that link traversal is required to query a distributed social graph that spans multiple Solid Pods.
 
 
 
@@ -83,4 +90,9 @@ application-owned databases. Applications only access the data with the user’s
 
 Technically, this allows users to switch applications without moving their data. Societally, it gives users more 
 control over their personal data and reduces dependency on large centralized platforms.
+
+
+Declaration of Tools: For this project, ChatGPT was used as a support tool to help with understanding the assignment, 
+debugging technical issues, and drafting explanations. Additionally, DeepL was used for language support and grammar. 
+
 

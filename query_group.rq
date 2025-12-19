@@ -2,6 +2,6 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT ?group
 WHERE {
-  <https://wiser-solid-xi.interactions.ics.unisg.ch/bc/profile/card#me>
+  <https://wiser-solid-xi.interactions.ics.unisg.ch/bb/profile/card#me>
     foaf:page ?group .
 }
