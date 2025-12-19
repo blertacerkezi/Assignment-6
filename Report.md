@@ -56,14 +56,31 @@ Ans:
 
 1. Which rules of Linked Data are applied to create the distributed knowledge graphs used in this assignment? Provide one concrete example for each rule you identify.
 
-Ans:
+Ans: In this assignment, the following Linked Data rules are applied:
+
+- Use URIs to identify things:
+Each person and group is identified by a unique WebID (e.g. a Solid profile URL).
+
+- Use HTTP URIs:
+All WebIDs and resources can be accessed via HTTP in a browser.
+
+- Provide useful information using RDF:
+Profiles and groups are described using RDF and the FOAF ontology.
+
+- Include links to other URIs:
+Profiles link to other people and groups using properties such as foaf:knows and foaf:member.
 
 2. One of your colleagues states that a Solid pod in itself is represented as a knowledge graph. Do you agree with this statement? Explain briefly
 
-Ans:
+Ans: Yes, we agree with this statement.
+A Solid pod stores data as RDF documents that consist of triples forming a graph structure. These graphs describe 
+entities such as people, groups, and resources and their relationships, which matches the definition of a knowledge graph.
 
 3. One core idea behind Solid is to decouple applications from data. Explain in your own words what this means and what technical and societal implications you see.
 
-Ans: 
+Ans: Decoupling applications from data means that users store their data in their own Solid Pods instead of in 
+application-owned databases. Applications only access the data with the user’s permission.
 
+Technically, this allows users to switch applications without moving their data. Societally, it gives users more 
+control over their personal data and reduces dependency on large centralized platforms.
 
