@@ -2,24 +2,41 @@ Assignment 6 Solution
 ---------------------
 
 # Team Members
-
-...
+Lena Högger
+Blerta Cerkezi
 
 # GitHub link to your (forked) repository
+https://github.com/blertacerkezi/Assignment-6
 
-...
 
 # Task 1
 
 1. Indicate WebIDs of the group members and the files corresponding to the profiles of the group members.
 
 Ans:
+The group consists of the following members and WebIDs:
+
+Blerta Cerkezi
+WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/bc/profile/card#me
+Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/bc/profile/card
+
+Lena Högger
+WebID: https://wiser-solid-xi.interactions.ics.unisg.ch/lenahoegger/profile/card#me
+Profile file: https://wiser-solid-xi.interactions.ics.unisg.ch/lenahoegger/profile/card
 
 
 2. Indicate the URL of group profile and the file that contains the group profile.
 
 Ans:
 
+The group profile is represented as a FOAF group and is stored as a Turtle document in a Solid Pod.
+
+Group profile URL (resource): https://wiser-solid-xi.interactions.ics.unisg.ch/b/group9.ttl#group
+Group profile file (document): https://wiser-solid-xi.interactions.ics.unisg.ch/b/group9.ttl
+
+The group profile contains FOAF statements defining the group and linking all group members via their WebIDs. 
+The document is publicly readable via its Access Control List.
+ 
 
 
 
