@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix pim: <http://www.w3.org/ns/pim/space#> .
+@prefix ex: <https://example.org/> .
+
+<https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/profile/card>
+    a foaf:PersonalProfileDocument ;
+    foaf:maker <#me> ;
+    foaf:primaryTopic <#me> .
+
+<#me>
+    a foaf:Person ;
+    foaf:name "Blerta Cerkezi" ;
+    foaf:mbox <mailto:blerta.cerkezi@student.unisg.ch> ;
+    solid:oidcIssuer <https://wiser-solid-xi.interactions.ics.unisg.ch/> ;
+    pim:storage <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/> ;
+    solid:privateTypeIndex <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/settings/privateTypeIndex> ;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/LH/profile/card#me> ;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/Nina/profile/card#me> ;
+    ex:hasMovieContainer <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/movies/> ;
+    foaf:member <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/group9.ttl#group> .
+

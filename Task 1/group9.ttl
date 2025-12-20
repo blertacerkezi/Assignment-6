@@ -1,0 +1,8 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#group>
+    a foaf:Group ;
+    foaf:name "Group 9" ;
+    foaf:member
+        <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/profile/card#me>,
+        <https://wiser-solid-xi.interactions.ics.unisg.ch/LH/profile/card#me> .

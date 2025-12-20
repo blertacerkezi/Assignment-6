@@ -1,0 +1,20 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix pim: <http://www.w3.org/ns/pim/space#>.
+@prefix ex: <https://example.org/>.
+
+<https://wiser-solid-xi.interactions.ics.unisg.ch/LH/profile/card> a foaf:PersonalProfileDocument;
+    foaf:maker <#me>;
+    foaf:primaryTopic <#me>.
+
+<#me> a foaf:Person;
+    foaf:name "Lena Högger";
+    foaf:mbox <mailto:lena.hoegger@student.unisg.ch>;
+    foaf:page <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/group.ttl>;
+    solid:oidcIssuer <https://wiser-solid-xi.interactions.ics.unisg.ch/>;
+    pim:storage <https://wiser-solid-xi.interactions.ics.unisg.ch/LH/>;
+    solid:privateTypeIndex <https://wiser-solid-xi.interactions.ics.unisg.ch/LH/settings/privateTypeIndex>;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/profile/card#me>;
+    foaf:knows <https://wiser-solid-xi.interactions.ics.unisg.ch/Nina/profile/card#me>;
+    ex:hasMovieContainer <https://wiser-solid-xi.interactions.ics.unisg.ch/LH/movies/>;
+    foaf:member <https://wiser-solid-xi.interactions.ics.unisg.ch/bcer/group.ttl>.
